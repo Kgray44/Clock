@@ -236,7 +236,7 @@ class Clock
       startmillis=millis();
     }
   
-    int timer(){
+    unsigned long timer(){
       return(millis() - startmillis);
     }
         
