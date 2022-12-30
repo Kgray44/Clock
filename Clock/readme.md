@@ -168,5 +168,5 @@ void slider(int buttonnumber=1)
 void timerstart()
 *Starts / resets the timer*
 
-int timer()
-*Returns an `int` value of the amount of milliseconds passes since calling `timerstart()`.*
+unsigned long timer()
+*Returns a `long` value of the amount of milliseconds passed since calling `timerstart()`.*
