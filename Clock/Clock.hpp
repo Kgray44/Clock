@@ -148,6 +148,7 @@ class Clock
           }
         }
       }
+      buzzeralarm = false;
     }
 
     int potentiometer(int mapped=true){
