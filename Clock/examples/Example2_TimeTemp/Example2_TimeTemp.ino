@@ -6,7 +6,7 @@ Development Environment: Arduino 2.0.3
 Download latest code here:
 https://github.com/Kgray44/Clock
 
-Driveway Gates code meant to be used alongside the tutorial found here:
+Clock code meant to be used alongside the tutorial found here:
 https://www.hackster.io/k-gray/diy-clock-kit-338901
 
 Copyright 2022 K Gray
