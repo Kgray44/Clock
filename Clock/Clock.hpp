@@ -212,7 +212,7 @@ class Clock
         return(digitalRead(Button4));
       }
     }
-    bool switch(int buttonnumber=1){
+    bool slider(int buttonnumber=1){
       if (buttonnumber==1){
         return(digitalRead(SW1));
       }
