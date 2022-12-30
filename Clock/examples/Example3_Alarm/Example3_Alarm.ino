@@ -1,5 +1,5 @@
 /*************************************************************
-File Name: Example1_Basic.ino
+File Name: Example3_Alarm.ino
 Processor/Platform: Arduino (Atmega16 tested)
 Development Environment: Arduino 2.0.3
 
