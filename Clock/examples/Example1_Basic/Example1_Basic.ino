@@ -23,8 +23,12 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 
 Liscense found here:
 https://opensource.org/licenses/MIT
- *************************************************************/
 
+
+*************************************************************
+Summary
+Displays the current time.
+*************************************************************/
 
 #include "Clock.hpp"
 
