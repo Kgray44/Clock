@@ -226,12 +226,22 @@ class Clock
         return(digitalRead(SW4));
       }
     }
+    
+    void timerstart(){
+      startmillis=millis();
+    }
   
+    int timer(){
+      return(millis() - startmillis);
+    }
+        
   private:
     
     bool AM;
     bool buzzeralarm;
-
+    
+    unsigned long startmillis=0;
+  
     struct alarmstruct {
       int hour=0;
       int minute=0;
