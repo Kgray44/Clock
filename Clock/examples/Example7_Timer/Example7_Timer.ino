@@ -44,7 +44,7 @@ void setup(){
 }
 
 void loop(){
-  clock.displayint(clock.timer(),0);
+  clock.displayint(clock.timer()/100,1);
   clock.rgb(0,clock.potentiometer(),0);
   clock.refresh();
 }
