@@ -162,5 +162,5 @@ void displayclear()
 void button(int buttonnumber=1)
 *Reads the button that is specified as an `int` (1 - 4) and returns a boolean value of `true` or `false`.*
 
-void switch(int buttonnumber=1)
-*Reads the switch that is specified as an `int` (1 - 4) and returns a boolean value of `true` or `false`.*
+void slider(int buttonnumber=1)
+*Reads the slider that is specified as an `int` (1 - 4) and returns a boolean value of `true` or `false`.*
