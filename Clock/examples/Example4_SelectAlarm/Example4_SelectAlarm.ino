@@ -43,17 +43,17 @@ void setup(){
 }
 
 void loop(){
-  if (clock.switch(1)){
+  if (clock.slider(1)){
     clock.setalarm(1,5,0,0,6);//Set a alarm for 5:0:0 AM on Friday
     clock.setalarm(2,8,30,0,6,true);//Set a alarm for 8:30:0 PM on Friday
   }
-  else if (clock.switch(2)){
+  else if (clock.slider(2)){
     clock.setalarm(1,12,30,0,6);//Set a alarm for 12:30:0 AM on Friday
   }
-  else if (clock.switch(3)){
+  else if (clock.slider(3)){
     clock.setalarm(1,2,45,0,6,true);//Set a alarm for 2:45:0 PM on Friday
   }
-  else if (clock.switch(4)){
+  else if (clock.slider(4)){
     clock.setalarm(1,4,10,7,6,true);//Set a alarm for 4:10:07 PM on Friday
   }
   clock.displayint(clock.gettime());
