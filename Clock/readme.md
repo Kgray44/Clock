@@ -75,7 +75,7 @@ Syntax / Definitions
 
 void begin(int brightness=100)
 
-*Starts the clock; takes a integer for brightness (should stay on default; 100)
+*Starts the clock; takes a integer for brightness (should stay on default; 100)*
 
 void refresh()
 
