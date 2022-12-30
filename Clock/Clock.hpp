@@ -9,8 +9,13 @@
 #include <dht.h>
 #include "Clock_Pins.h"
 
-unsigned long lastmillis;
-unsigned long lastMillis;
+unsigned long lastmillis=0;
+unsigned long lastMillis=0;
+
+bool AM;
+bool buzzeralarm;
+    
+unsigned long startmillis=0;
 
 class Clock
 {
@@ -236,11 +241,6 @@ class Clock
     }
         
   private:
-    
-    bool AM;
-    bool buzzeralarm;
-    
-    unsigned long startmillis=0;
   
     struct alarmstruct {
       int hour=0;
