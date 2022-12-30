@@ -197,7 +197,36 @@ class Clock
     void displayclear(){
       sevseg->blank();
     }
-
+    
+    bool button(int buttonnumber=1){
+      if (buttonnumber==1){
+        return(digitalRead(Button1));
+      }
+      else if (buttonnumber==2){
+        return(digitalRead(Button2));
+      }
+      else if (buttonnumber==3){
+        return(digitalRead(Button3));
+      }
+      else if (buttonnumber==4){
+        return(digitalRead(Button4));
+      }
+    }
+    bool switch(int buttonnumber=1){
+      if (buttonnumber==1){
+        return(digitalRead(SW1));
+      }
+      else if (buttonnumber==2){
+        return(digitalRead(SW2));
+      }
+      else if (buttonnumber==3){
+        return(digitalRead(SW3));
+      }
+      else if (buttonnumber==4){
+        return(digitalRead(SW4));
+      }
+    }
+  
   private:
     
     bool AM;
