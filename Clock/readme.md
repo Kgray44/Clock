@@ -164,3 +164,9 @@ void button(int buttonnumber=1)
 
 void slider(int buttonnumber=1)
 *Reads the slider that is specified as an `int` (1 - 4) and returns a boolean value of `true` or `false`.*
+
+void timerstart()
+*Starts / resets the timer*
+
+int timer()
+*Returns an `int` value of the amount of milliseconds passes since calling `timerstart()`.*
