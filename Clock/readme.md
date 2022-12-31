@@ -72,6 +72,10 @@ void button(int buttonnumber=1)
 
 void switch(int buttonnumber=1)
 
+void timerstart()
+
+unsigned long timer()
+
 *************************************************************
 Syntax / Definitions
 *************************************************************
