@@ -1,6 +1,6 @@
 #include "WString.h"
-#ifndef WS2812IR_NB_h
-#define WS2812IR_NB_h
+#ifndef Clock_h
+#define Clock_h
 
 #include "Arduino.h"
 #include <Wire.h>
