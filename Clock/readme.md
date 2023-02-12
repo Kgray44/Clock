@@ -50,7 +50,7 @@ int gethour()
 
 void checkalarm()
 
-void doalarm(int soundseq=1, int count=15)
+void doalarm(int soundseq=1, int count=15, bool buttonoff = true)
 
 int potentiometer(int mapped=true)
 
@@ -120,8 +120,8 @@ Syntax / Definitions
 `void checkalarm()`
 *Checks if any alarms have gone off.*
 
-`void doalarm(int soundseq=1, int count=15)`
-*If the `checkalarm()` function is true, the `doalarm()` function sounds the alarm.  This function takes two values.  The first is a `int` that specifies the alarm sequence and can be from 1 to 4.  The second is the amount of times it buzzes.*
+`void doalarm(int soundseq=1, int count=15, bool buttonoff = true)`
+*If the `checkalarm()` function is true, the `doalarm()` function sounds the alarm.  This function takes three values.  The first is a `int` that specifies the alarm sequence and can be from 1 to 4.  The second is the amount of times it buzzes.  The third is a bool for if you would like Button1 to be able to mute the alarm (defualt is true)*
 
 `int potentiometer(int mapped=true)`
 *Returns a `int` value from reading the potentiometer.  Takes one `bool` value.  If this value is true, the output will be mapped from 0 - 255, else the value will be from 0 - 1023.*
