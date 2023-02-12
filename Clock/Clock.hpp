@@ -110,7 +110,7 @@ class Clock
       }
     } 
 
-    void doalarm(int soundseq=1, int count=15){
+    void doalarm(int soundseq=1, int count=15, bool buttonoff = true){
       if (count < 10){count=10;}
       if (buzzeralarm == true){
         if (soundseq == 1){
@@ -119,6 +119,11 @@ class Clock
             delay(500);
             digitalWrite(Buzzer, LOW);
             delay(500);
+            if (buttonoff){
+              if (digitalRead(Button1) == LOW){
+                goto exit;
+              }
+            }
           }
         }
         else if (soundseq == 2){
@@ -127,6 +132,11 @@ class Clock
             delay(1000);
             digitalWrite(Buzzer, LOW);
             delay(500);
+            if (buttonoff){
+              if (digitalRead(Button1) == LOW){
+                goto exit;
+              }
+            }
           }
         }
         else if (soundseq == 3){
@@ -135,6 +145,11 @@ class Clock
             delay(500);
             digitalWrite(Buzzer, LOW);
             delay(1000);
+            if (buttonoff){
+              if (digitalRead(Button1) == LOW){
+                goto exit;
+              }
+            }
           }
         }
         else if (soundseq == 4){
@@ -143,6 +158,11 @@ class Clock
             delay(1000);
             digitalWrite(Buzzer, LOW);
             delay(500);
+            if (buttonoff){
+              if (digitalRead(Button1) == LOW){
+                goto exit;
+              }
+            }
           }
           delay(5000);
           for (int i=0;i<count/2;i++){
@@ -150,9 +170,15 @@ class Clock
             delay(1000);
             digitalWrite(Buzzer, LOW);
             delay(500);
+            if (buttonoff){
+              if (digitalRead(Button1) == LOW){
+                goto exit;
+              }
+            }
           }
         }
       }
+      exit:
       buzzeralarm = false;
     }
 
